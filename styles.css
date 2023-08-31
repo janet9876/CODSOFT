@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.calculator {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  padding: 20px;
+  background-color: #fff;
+  max-width: 400px;
+  width: 100%;
+}
+
+.display {
+  grid-column: span 4;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #e0e0e0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #d0d0d0;
+}
+
+/* Style specific buttons */
+#clear, #backspace, #equals, #decimal {
+  background-color: #f2a007;
+  color: #fff;
+}
+
+#clear:hover, #backspace:hover, #equals:hover, #decimal:hover {
+  background-color: #e08906;
+}
+
+#num0, #num1, #num2, #num3, #num4, #num5, #num6, #num7, #num8, #num9 {
+  background-color: #f0f0f0;
+}
+
+#add, #subtract, #multiply, #divide {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+#add:hover, #subtract:hover, #multiply:hover, #divide:hover {
+  background-color: #ff5252;
+}
